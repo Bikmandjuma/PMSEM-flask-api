@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from Crop_data.dataset import dataset
+from Dataset_loc.dataset import dataset
 
 statistics_bp = Blueprint('statistics', __name__)
 

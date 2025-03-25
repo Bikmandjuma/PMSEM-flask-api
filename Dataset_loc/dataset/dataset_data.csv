@@ -1,0 +1,10 @@
+Sensor_ID,temperature,vibration,state
+S_1,20,0.2,Healthy
+S_2,21,0.25,Healthy
+S_3,22,0.3,Healthy
+S_4,23,0.35,Warning
+S_5,24,0.4,Failing
+S_6,25,0.2,Healty
+S_7,26,0.25,Warning
+S_8,27,0.3,Warning
+S_9,28,0.35,Failing
