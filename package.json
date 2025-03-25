@@ -1,0 +1,19 @@
+{
+  "name": "soil_smart",
+  "version": "1.0.0",
+  "description": "Soil smart.",
+  "main": "index.js",
+  "scripts": {
+    "start": "gunicorn app:app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss build static/css/styles.css -o static/css/dist/styles.css --minify"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16"
+  }
+}
