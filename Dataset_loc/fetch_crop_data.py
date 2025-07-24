@@ -3,8 +3,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from flask import Blueprint, jsonify, request
 import requests
-from Dataset_loc.dataset import dataset  # Load local dataset
-from Dataset_loc.laravel_url_api import Laravel_url_api  # Laravel API URL
+from Dataset_loc.dataset import dataset
+from Dataset_loc.laravel_url_api import Laravel_url_api
 
 motor_state_bp = Blueprint('motor_state_bp', __name__)
 
@@ -56,6 +56,7 @@ def get_motor_state():
 
     if filtered_predictions.empty:
         return jsonify({"message": "Unable to determine motor state."})
+    
     else:
         most_probable_state = filtered_predictions.index[0]
         return jsonify({
